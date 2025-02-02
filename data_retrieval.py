@@ -15,7 +15,7 @@ CLEANED_DATA_PATH = os.getenv("CLEANED_DATA_PATH", os.path.join(OUTPUT_DIR, "ele
 AGGREGATED_REVIEWS_PATH = os.getenv("AGGREGATED_REVIEWS_PATH", os.path.join(OUTPUT_DIR, "electronics_reviews.parquet"))
 EMBEDDINGS_METADATA_PATH = os.getenv("EMBEDDINGS_METADATA_PATH", os.path.join(MODELS_DIR, "electronics_metadata_embeddings.npy"))
 EMBEDDINGS_REVIEWS_PATH = os.getenv("EMBEDDINGS_REVIEWS_PATH", os.path.join(MODELS_DIR, "electronics_reviews_embeddings.npy"))
-EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL_NAME", "all-MiniLM-L6-v2")
+EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL_NAME", "all-mpnet-base-v2")
 
 # Create directories if they do not exist
 os.makedirs(DATA_DIR, exist_ok=True)
